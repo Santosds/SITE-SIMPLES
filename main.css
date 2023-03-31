@@ -1,20 +1,38 @@
-body {
-    font-family: monospace;
+:root {
+    --grenn: #00FF00;
+    --with: #FFF;
+    --black: #000000;
 }
+
+* {
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+
+body {
+    background: var(--bg);
+}
+
 ul {
     font-family: helvetica;
 }
+
 li{
     list-style: circle;
 }
+
 .list {
     list-style: square;
 }
-#msg {
-    font-family: monospace;
-}
+
 
 .light-theme{
-    color: #000000;
-    background: #00FF00;
+    --bg: var(--grenn);
+    --fontColor: var(--black);
+     
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--grenn);
 }
